@@ -5,7 +5,7 @@ require("cors")();
 const app = express();
 app.use(require("express-status-monitor")());
 app.get("/", (req, res) => {
-  res.json({ msg: process.env.NODE_ENV });
+  res.json({ msg: process.env.NODE_ENV, msg: "hello" });
   console.log(req);
 });
 
